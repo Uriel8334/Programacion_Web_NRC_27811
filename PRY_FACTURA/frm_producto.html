@@ -15,117 +15,145 @@
 <body>
 
     <header style="text-align: center;">
-        <h1>Formulario de Producto</h1>
+        <h3>ESPARTANO EC S.A.</h3>
     </header>
     <main>
-        <form action="impresion_factura.html" method="get" style="text-align: center;">
-            <table border="2" style="text-align: center;" width="100%">
-                <!-- ENCABEZADO -->
-                <thead>
-                    <tr>
-                        <th rowspan="2">
-                            ID
-                        </th>
-                        <th>
-                            Nombre
-                        </th>
-                        <th>
-                            Descripcion
-                        </th>
-                        <th>
-                            Precio
-                        </th>
-                        <th>
-                            Inventario
-                        </th>
-                        <th>
-                            Categoria
-                        </th>
-                        <th>
-                            Peso
-                        </th>
-                        <th>
-                            Fecha Expiracion
-                        </th>
-                    </tr>
-                </thead>
-                <!-- CUERPO -->
-                <tbody>
-                    <tr>
-                        <td>
-                            <input type="ID" name="ID" id="ID" placeholder="Ingrese el ID del producto" height="100%">
-                        </td>
+        <center>
+            <form action="impresion_factura.html" method="get">
 
-                        <td>
-                            <input type="nombre" name="nombre" id="nombre" placeholder="Ingrese el nombre del producto">
-                        </td>
-                        <td>
-                            <input type="descripcion" name="descripcion" id="descripcion"
-                                placeholder="Ingrese la descripcion del producto">
-                        </td>
-                        <td>
-                            <input type="number" name="precio" id="precio" placeholder="Ingrese el precio del producto"
-                                min="0.00">
-                        </td>
-                        <td>
-                            <input type="number" name="inventario" id="inventario"
-                                placeholder="Ingrese la cantidad en inventario" min="0">
-                        </td>
-                        <td>
-                            <ul>
-                                <li type="square">
-                                    <label for="radio">Tecnologia</label>
-                                    <input type="radio" name="categoria" id="tecnologia">
-                                    <br>
-                                </li>
-                            </ul>
-                            <ul>
-                                <li type="square">
-                                    <label for="radio">Mascotas</label>
-                                    <input type="radio" name="categoria" id="mascotas">
-                                    <br>
-                                </li>
-                            </ul>
-                            <ul>
-                                <li type="square">
-                                    <label for="radio">Comida</label>
-                                    <input type="radio" name="categoria" id="comida">
-                                    <br>
-                                </li>
-                            </ul>
-                        </td>
-                        <td>
-                            <input type="number" name="peso" id="peso" placeholder="Ingrese el peso del producto"
-                                min="0.00" max="1000">
-                            <label for="peso">Kg</label>
-                        </td>
-                        <td>
-                            <label for="fecha_expedicion">Fecha Expedicion</label>
-                            <input type="date" name="fecha_expedicion" id="fecha_expedicion" value="2025-10-22"
-                                min="2025-10-24">
-                            <br><br>
-                            <label for="fecha_caducidad">Fecha Expiracion</label>
-                            <input type="date" name="fecha_caducidad" id="fecha_caducidad" value="2025-10-22"
-                                min="2025-10-24" max="2027-12-31">
-                        </td>
-                    </tr>
+                <table border="2" width="70%">
+                    <!-- ENCABEZADO -->
+                    <thead>
+                        <th>
+                            <h1>
+                                <label for="htext_form">Formulario de Producto</label>
+                            </h1>
+                        </th>
+                    </thead>
+                    <!-- CUERPO -->
+                    <tbody>
+                        <tr>
+                            <th>
+                                <label for="ID">ID</label>
+                                <br>
+                                <input type="ID" name="ID" id="ID" placeholder="Ingrese el ID del producto"
+                                    style="width: 80%;">
+                            </th>
+                        </tr>
 
-                </tbody>
-                <!-- PIE DE TABLA -->
-                <tfoot>
-                    <tr>
-                        <td colspan="4">
-                            <input type="reset" value="LIMPIAR FORMULARIO">
-                        </td>
-                        <td colspan="4">
-                            <input type="submit" value="ENVIAR DATOS">
-                        </td>
-                    </tr>
-                </tfoot>
+                        <tr>
+                            <th>
+                                <label for="nombre">Nombre</label>
+                                <br>
+                                <input type="nombre" name="nombre" id="nombre"
+                                    placeholder="Ingrese el nombre del producto" style="width: 80%;">
+                            </th>
+                        </tr>
 
-            </table>
+                        <tr>
+                            <th>
+                                <label for="descripcion">Descripcion</label>
+                                <br>
+                                <input type="descripcion" name="descripcion" id="descripcion"
+                                    placeholder="Ingrese la descripcion del producto" style="width: 80%;">
+                            </th>
+                        </tr>
 
-        </form>
+                        <tr>
+                            <th>
+                                <label for="precio">Precio</label>
+                                <br>
+                                <input type="number" name="precio" id="precio"
+                                    placeholder="Ingrese el precio del producto" min="0.00" style="width: 80%;">
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <th>
+                                <label for="inventario"> Inventario</label>
+                                <br>
+                                <input type="number" name="inventario" id="inventario"
+                                    placeholder="Ingrese la cantidad en inventario" min="0" style="width: 80%;">
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <th>
+                                <label for="categoria">Categoria</label>
+                                <br>
+                                <ul style="text-align: left;">
+                                    <li type="square">
+                                        <label for="radio">Tecnologia</label>
+                                        <input type="radio" name="categoria" id="tecnologia">
+                                        <br>
+                                    </li>
+                                </ul>
+                                <ul style="text-align: left;">
+                                    <li type="square">
+                                        <label for="radio">Mascotas</label>
+                                        <input type="radio" name="categoria" id="mascotas">
+                                        <br>
+                                    </li>
+                                </ul>
+                                <ul style="text-align: left;">
+                                    <li type="square">
+                                        <label for="radio">Comida</label>
+                                        <input type="radio" name="categoria" id="comida">
+                                        <br>
+                                    </li>
+                                </ul>
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <th>
+                                <label for="peso">Peso</label>
+                                <br>
+                                <input type="number" name="peso" id="peso" placeholder="Ingrese el peso del producto"
+                                    min="0.00" max="1000" style="width: 80%;">
+                                <label for="peso">Kg</label>
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <th>
+                                <label for="fecha_expedicion">Fecha Expedicion</label>
+                                <br>
+                                <input type="date" name="fecha_expedicion" id="fecha_expedicion" value="2025-10-22"
+                                    min="2025-10-24" style="width: 80%;">
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <th>
+                                <label for="fecha_caducidad">Fecha Expiracion</label>
+                                <br>
+                                <input type="date" name="fecha_caducidad" id="fecha_caducidad" value="2025-10-22"
+                                    min="2025-10-24" max="2027-12-31" style="width: 80%;">
+                            </th>
+                        </tr>
+                    </tbody>
+                    <!-- PIE DE TABLA -->
+
+                    <tfoot>
+                        <tr>
+                            <td>
+                                <center>
+                                    <input type="reset" value="LIMPIAR FORMULARIO" style="width: 80%;">
+                                </center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <center>
+                                    <input type="submit" value="ENVIAR DATOS" style="width: 80%;">
+                                </center>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </form>
+        </center>
     </main>
     <footer>
         <p style="text-align: center;">® Derechos Reservados por ESPARTANO EC S.A.</p>
