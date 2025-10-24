@@ -4,122 +4,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario Cliente</title>
 </head>
 
 <body>
     <header>
-
+        <center>
+            <h1>FORMULARIO CLIENTE</h1>
+        </center>
     </header>
     <main>
-        <form action="frm_producto.html" method="get">
+        <center>
 
-            <table border="2">
-                <thead>
-                    <tr>
-                        <td colspan="4">
-                            <figure>
-                                <img src="https://cdn-icons-png.freepik.com/512/6009/6009864.png" alt="IMAGEN CLIENTE"
-                                    width="100" height="100">
-                            </figure>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th colspan="4">
-                            <h2>FORMULARIO DEL CLIENTE</h2>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th colspan="4">
-                            <h3>INFORMACION</h3>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <label for="nombres">INGRESE SU NOMBRE</label>
-                        </td>
-                        <td>
-                            <input type="text" name="nombres" id="nombres" placeholder="Ejm. Cameron Victoria"
-                                minlength="3">
-                        </td>
-                        <td>
-                            <label for="apellidos">INGRESE SUS APELLIDOS</label>
-                        </td>
-                        <td>
-                            <input type="text" name="apellidos" id="apellidos" placeholder="Ejm. Diaz Caizaluisa"
-                                maxlength="20" minlength="3" size="25">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="date">INGRESE SU FECHA DE NACIMIENTO</label>
-                        </td>
-                        <td>
-                            <input type="date" name="fecha_nacimiento" id="fecha" placeholder="20/03/2003"
-                                maxlength="20" minlength="3" value="2025-10-24" max="2010-01-01" min="1950-01-101">
-                        </td>
-                        <td>
-                            <label for="email">INGRESE SU EMAIL</label>
-                        </td>
-                        <td>
-                            <input type="email" name="email" id="email" placeholder="Ejm cvdiaz3@espe.edu.ec" size="25">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <label for="direccion">INGRESE SU DIRECCION</label>
-                        </td>
-                        <td colspan="2">
-                            <input type="text" name="direccion" id="direccion"
-                                placeholder="Ejm. Puengasi Constantino Fernandez s5-241" maxlength="20" minlength="3"
-                                size="55">
-                        </td>
-                    <tr>
-                        <td>
-                            <label for="telefono">INGRESE SU TELEFONO</label>
-                        </td>
-                        <td>
-                            <input type="text" name="telefono" id="telefono" placeholder="0984284522" maxlength="10"
-                                minlength="3">
-                        </td>
-                        <td>
-                            <label for="cedula">INGRESE SU CEDULA</label>
-                        </td>
-                        <td>
-                            <input type="text" name="cedula" id="cedula" placeholder="1727095414" maxlength="10"
-                                minlength="3" size="25">
-                        </td>
-                    </tr>
-                    <tr>
+            <form action="frm_producto.html" method="get">
+                <table border="2" width="50%"
+                    style="text-align: center; font-family: 'Courier New', Courier, monospace; background-color: lightblue;">
+                    <!-- ENCABEZADO -->
+                    <thead>
+                        <tr>
+                            <td colspan="4">
+                                <center>
+                                    <figure>
+                                        <img src="https://cdn-icons-png.freepik.com/512/6009/6009864.png"
+                                            alt="IMAGEN CLIENTE" width="100" height="100">
+                                    </figure>
+                                </center>
+                            </td>
+                        </tr>
 
-                    </tr>
+                        <tr>
+                            <th colspan="2">
+                                <h2>FORMULARIO DEL CLIENTE</h2>
+                            </th>
+                        </tr>
 
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td>
-                            <label for="vaciar">VACIAR FORMULARIO</label>
-                        </td>
+                        <tr>
+                            <th colspan="2">
+                                <h3>INFORMACION</h3>
+                            </th>
+                        </tr>
+                    </thead>
+                    <!-- CUERPO -->
+                    <tbody>
+                        <tr>
+                            <td colspan="2">
+                                <label for="nombres">INGRESE SU NOMBRE</label>
+                                <br>
+                                <input type="text" name="nombres" id="nombres" placeholder="Ejm. Cameron Victoria"
+                                    minlength="3" maxlength="20" required style="width: 80%;">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <label for="apellidos">INGRESE SUS APELLIDOS</label>
+                                <br>
+                                <input type="text" name="apellidos" id="apellidos" placeholder="Ejm. Diaz Caizaluisa"
+                                    maxlength="20" minlength="3" size="25" required style="width: 80%;">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <label for="date">INGRESE SU FECHA DE NACIMIENTO</label>
+                                <br>
+                                <input type="date" name="fecha_nacimiento" id="fecha" placeholder="20/03/2003"
+                                    maxlength="20" minlength="3" value="2025-10-24" max="2010-01-01" min="1950-01-01"
+                                    style="width: 80%;" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <label for="email">INGRESE SU EMAIL</label>
+                                <br>
+                                <input type="email" name="email" id="email" placeholder="Ejm cvdiaz3@espe.edu.ec"
+                                    style="width: 80%;" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <label for="direccion">INGRESE SU DIRECCION</label>
+                                <br>
+                                <input type="text" name="direccion" id="direccion"
+                                    placeholder="Ejm. Puengasi Constantino Fernandez s5-241" maxlength="30"
+                                    minlength="3" style="width: 80%;" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <label for="telefono">INGRESE SU TELEFONO</label>
+                                <br>
+                                <input type="text" name="telefono" id="telefono" placeholder="0984284522" maxlength="10"
+                                    minlength="3" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" style="width: fit-content;">
+                                <label for="cedula">INGRESE SU CEDULA</label>
+                                <br>
+                                <input type="text" name="cedula" id="cedula" placeholder="1727095414" maxlength="10"
+                                    minlength="3" size="25" required>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <!-- PIE DE TABLA -->
+                    <tfoot>
                         <td>
                             <input type="reset" name="vaciar" id="vaciar" value="VACIAR FORMULARIO">
 
                         </td>
                         <td>
-                            <label for="enviarr">ENVIAR FORMULARIO</label>
-                        </td>
-                        <td>
                             <input type="submit" name="enviar" id="enviarr" value="ENVIAR FORMULARIO">
 
                         </td>
-                    </tr>
-                </tfoot>
-            </table>
-        </form>
+                    </tfoot>
+                </table>
+            </form>
+        </center>
     </main>
     <footer>
-
+        <center>
+            <h4>2024 &copy; Derechos Reservados</h4>
+        </center>
     </footer>
 </body>
 
