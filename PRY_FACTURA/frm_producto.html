@@ -36,17 +36,16 @@
                             <th>
                                 <label for="ID">ID</label>
                                 <br>
-                                <input type="ID" name="ID" id="ID" placeholder="Ingrese el ID del producto"
-                                    style="width: 80%;">
+                                <input type="ID" name="ID" id="ID" placeholder="Ingrese el ID del producto" style="width: 80%;" required>
                             </th>
                         </tr>
 
                         <tr>
                             <th>
-                                <label for="nombre">Nombre</label>
+                                <label for="nombre">Nombre del producto </label>
                                 <br>
                                 <input type="nombre" name="nombre" id="nombre"
-                                    placeholder="Ingrese el nombre del producto" style="width: 80%;">
+                                    placeholder="Ingrese el nombre del producto" style="width: 80%;" required>
                             </th>
                         </tr>
 
@@ -55,7 +54,7 @@
                                 <label for="descripcion">Descripcion</label>
                                 <br>
                                 <input type="descripcion" name="descripcion" id="descripcion"
-                                    placeholder="Ingrese la descripcion del producto" style="width: 80%;">
+                                    placeholder="Ingrese la descripcion del producto" style="width: 80%;" required>
                             </th>
                         </tr>
 
@@ -64,7 +63,7 @@
                                 <label for="precio">Precio</label>
                                 <br>
                                 <input type="number" name="precio" id="precio"
-                                    placeholder="Ingrese el precio del producto" min="0.00" style="width: 80%;">
+                                    placeholder="Ingrese el precio del producto" min="0.00" style="width: 80%;" required>
                             </th>
                         </tr>
 
@@ -73,7 +72,7 @@
                                 <label for="inventario"> Inventario</label>
                                 <br>
                                 <input type="number" name="inventario" id="inventario"
-                                    placeholder="Ingrese la cantidad en inventario" min="0" style="width: 80%;">
+                                    placeholder="Ingrese la cantidad en inventario" min="0" style="width: 80%;" required>
                             </th>
                         </tr>
 
@@ -84,7 +83,7 @@
                                 <ul style="text-align: left;">
                                     <li type="square">
                                         <label for="radio">Tecnologia</label>
-                                        <input type="radio" name="categoria" id="tecnologia">
+                                        <input type="radio" name="categoria" id="tecnologia" checked required>
                                         <br>
                                     </li>
                                 </ul>
@@ -110,7 +109,7 @@
                                 <label for="peso">Peso</label>
                                 <br>
                                 <input type="number" name="peso" id="peso" placeholder="Ingrese el peso del producto"
-                                    min="0.00" max="1000" style="width: 80%;">
+                                    min="0.00" max="1000" style="width: 80%;" required>
                                 <label for="peso">Kg</label>
                             </th>
                         </tr>
@@ -119,8 +118,7 @@
                             <th>
                                 <label for="fecha_expedicion">Fecha Expedicion</label>
                                 <br>
-                                <input type="date" name="fecha_expedicion" id="fecha_expedicion" value="2025-10-22"
-                                    min="2025-10-24" style="width: 80%;">
+                                <input type="date" name="fecha_expedicion" id="fecha_expedicion" value="2025-10-24" min="2025-10-01" style="width: 80%;" required>
                             </th>
                         </tr>
 
@@ -128,8 +126,7 @@
                             <th>
                                 <label for="fecha_caducidad">Fecha Expiracion</label>
                                 <br>
-                                <input type="date" name="fecha_caducidad" id="fecha_caducidad" value="2025-10-22"
-                                    min="2025-10-24" max="2027-12-31" style="width: 80%;">
+                                <input type="date" name="fecha_caducidad" id="fecha_caducidad" value="2025-12-31" min="2025-10-24" max="2027-12-31" style="width: 80%;" required>
                             </th>
                         </tr>
                     </tbody>
