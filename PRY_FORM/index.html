@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        INTRODUCCION A LOS FORMULARIOS
+    </title>
+</head>
+
+<body>
+
+    <header style="text-align: center;">
+        <h1>FORMULARIO PARA INGRESAR DATOS DE UNA PERSONA</h1>
+    </header>
+    <main>
+        <!-- FORM -->
+        <form action="server.html" method="get" style="text-align: center;">
+            <!-- label debe ingresarse con el texto en id -->
+            <!-- APELLIDO -->
+            <label for="apellidos">INGRESE SU APELLIDO</label>
+            <input type="text" name="apellidos" id="apellidos" placeholder="Ejemplo: Andrade" maxlength="5"
+                minlength="3">
+            <br>
+            <!-- NOMBRE -->
+            <label for="nombre">INGRESE SU NOMBRE</label>
+            <input type="text" name="nombres" id="nombre" placeholder="Ejemplo:Uriel">
+            <br>
+            <!-- EDAD -->
+            <label for="edad">INGRESE SU EDAD</label>
+            <input type="number" name="edad" id="edad" placeholder="Ejemplo: 18" min="5" max="75">
+            <br>
+            <!-- 
+            label[for=email]{INGRESE SU EMAIL}+input[type=email name=email id=email placeholder="Ejemplo:uaandrade@espe.edu.ec"] -->
+
+            <!-- EMAIL -->
+            <label for="email">INGRESE SU EMAIL</label>
+            <input type="email" name="email" id="email" placeholder="Ejemplo:uaandrade@espe.edu.ec">
+            <br>
+
+            <!-- DATE - FECHA DE NACIMIENTO -->
+            <label for="date">INGRESE SU FECHA DE NACIMIENTO</label>
+            <!-- primero anio mes y luego dia -->
+            <input type="date" name="fecha_nacimiento" id="date" placeholder="Ejemplo:09/03/2025" value="2025-10-22"
+                min="2025-10-21" max="2025-12-31">
+
+            <!-- RADIO -->
+
+            <p>SELECCIONE SU SEXO</p>
+            <label for="hombre">HOMBRE</label>
+            <input type="radio" name="sexo" id="hombre" value="HOMBRE" checked>
+            <br>
+            <label for="mujer">MUJER</label>
+            <input type="radio" name="sexo" id="mujer" value="MUJER">
+            <br> <!-- br DA UN SALTO DE LINEA -->
+            <label for="desconocido">DESCONOCIDO</label>
+            <input type="radio" name="sexo" id="desconocido" value="DESCONOCIDO" disabled>
+            <br> <br>
+
+            <!-- CHECKBOX -->
+            <label for="">SELECCIONE SUS DIAS DE CLASE DE PROGRAMACION WEB</label>
+            <br>
+            <label for="lunes">LUNES</label>
+            <input type="checkbox" name="dias[]" id="lunes">
+            <br>
+            <label for="martes">MARTES</label>
+            <input type="checkbox" name="dias[]" id="martes">
+            <br>
+            <label for="miercoles">MIERCOLES</label>
+            <input type="checkbox" name="dias[]" id="miercoles">
+            <br>
+            <label for="jueves">JUEVES</label>
+            <input type="checkbox" name="dias[]" id="jueves">
+            <br>
+            <label for="viernes">VIERNES</label>
+            <input type="checkbox" name="dias[]" id="viernes">
+            <br> <br>
+
+            <!-- INPUT -->
+            <label for="foto">SUBA SU FOTO DE PERFIL</label>
+            <br>
+            <input type="file" name="foto" id="foto" accept=".pdf, .jpg, .png">
+            <br> <br>
+
+            <!-- color -->
+            <label for="color">SELECCIONE SU COLOR FAVORITO</label><br>
+            <input type="color" name="color" id="color" value="#33661A">
+            <br> <br>
+            <!-- RANGUE -->
+            <label for="estatura">SELECCIONE SU ESTATURA</label>
+            <input type="range" name="estatura" id="estatura" min="10" max="250" step="1" value="50">
+            <br> <br>
+
+            <!-- SEARCH -->
+            <label for="cedula">BUSCAR POR CEDULA</label>
+            <input type="search" name="cedula" id="cedula">
+            <br><br>
+
+
+            <!-- HIDDEN, PASSWORD -->
+            <label for="password">INGRESE SU CONTRASENIA</label>
+            <input type="password" name="password" id="password" placeholder="******">
+            <label for="usuario"></label>
+            <input type="hidden" name="usuario" id="usuario" value="uaandrade">
+            <br><br>
+
+            <!-- RESET -->
+            <label for="vaciar">VACIAR FORMULARIO</label>
+            <input type="reset" name="vaciar" id="vaciar">
+            <br><br>
+
+            <!-- SUBMIT -->
+            <!-- <label for="enviar">ENVIAR DATOS</label> -->
+            <input type="submit" name="enviar" id="enviar" value="ENVIAR DATOS">
+
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+
+
+</body>
+
+</html>

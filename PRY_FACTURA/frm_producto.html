@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        ACTIVIDAD FORMULARIO
+    </title>
+</head>
+
+<!-- Atributos del producto -->
+<!-- ID, Nombre, Precio, Descripcion, Inventario, Categoria, Peso-->
+
+<body>
+
+    <header style="text-align: center;">
+        <h1>Formulario de Producto</h1>
+    </header>
+    <main>
+        <form action="impresion_factura.html" method="get" style="text-align: center;">
+            <table border="2" style="text-align: center;" width="100%">
+                <!-- ENCABEZADO -->
+                <thead>
+                    <tr>
+                        <th rowspan="2">
+                            ID
+                        </th>
+                        <th>
+                            Nombre
+                        </th>
+                        <th>
+                            Descripcion
+                        </th>
+                        <th>
+                            Precio
+                        </th>
+                        <th>
+                            Inventario
+                        </th>
+                        <th>
+                            Categoria
+                        </th>
+                        <th>
+                            Peso
+                        </th>
+                        <th>
+                            Fecha Expiracion
+                        </th>
+                    </tr>
+                </thead>
+                <!-- CUERPO -->
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="ID" name="ID" id="ID" placeholder="Ingrese el ID del producto" height="100%">
+                        </td>
+
+                        <td>
+                            <input type="nombre" name="nombre" id="nombre" placeholder="Ingrese el nombre del producto">
+                        </td>
+                        <td>
+                            <input type="descripcion" name="descripcion" id="descripcion"
+                                placeholder="Ingrese la descripcion del producto">
+                        </td>
+                        <td>
+                            <input type="number" name="precio" id="precio" placeholder="Ingrese el precio del producto"
+                                min="0.00">
+                        </td>
+                        <td>
+                            <input type="number" name="inventario" id="inventario"
+                                placeholder="Ingrese la cantidad en inventario" min="0">
+                        </td>
+                        <td>
+                            <ul>
+                                <li type="square">
+                                    <label for="radio">Tecnologia</label>
+                                    <input type="radio" name="categoria" id="tecnologia">
+                                    <br>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li type="square">
+                                    <label for="radio">Mascotas</label>
+                                    <input type="radio" name="categoria" id="mascotas">
+                                    <br>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li type="square">
+                                    <label for="radio">Comida</label>
+                                    <input type="radio" name="categoria" id="comida">
+                                    <br>
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <input type="number" name="peso" id="peso" placeholder="Ingrese el peso del producto"
+                                min="0.00" max="1000">
+                            <label for="peso">Kg</label>
+                        </td>
+                        <td>
+                            <label for="fecha_expedicion">Fecha Expedicion</label>
+                            <input type="date" name="fecha_expedicion" id="fecha_expedicion" value="2025-10-22"
+                                min="2025-10-24">
+                            <br><br>
+                            <label for="fecha_caducidad">Fecha Expiracion</label>
+                            <input type="date" name="fecha_caducidad" id="fecha_caducidad" value="2025-10-22"
+                                min="2025-10-24" max="2027-12-31">
+                        </td>
+                    </tr>
+
+                </tbody>
+                <!-- PIE DE TABLA -->
+                <tfoot>
+                    <tr>
+                        <td colspan="4">
+                            <input type="reset" value="LIMPIAR FORMULARIO">
+                        </td>
+                        <td colspan="4">
+                            <input type="submit" value="ENVIAR DATOS">
+                        </td>
+                    </tr>
+                </tfoot>
+
+            </table>
+
+        </form>
+    </main>
+    <footer>
+        <p style="text-align: center;">® Derechos Reservados por ESPARTANO EC S.A.</p>
+    </footer>
+
+</body>
+
+</html>
