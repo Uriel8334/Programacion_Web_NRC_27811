@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTIVIDAD FORMULARIO</title>
+</head>
+
+<body>
+
+    <header>
+        <center>
+            <h1>FORMULARIO REGISTRO DE CARRERA</h1>
+        </center>
+    </header>
+    <main>
+        <form action="server.html" method="post">
+            <center>
+                <fieldset>
+                    <legend>
+                        INGRESE EL NUMERO DE CÉDULA
+                    </legend>
+                    <label for="cedula_usuario">Cédula:</label>
+                    <input type="number" name="cedula_usuario" id="cedula_usuario" required minlength="10"
+                        maxlength="10" pattern="[0-9]{10}" size="10">
+
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>
+                        SELECCIONE SU FECHA DE NACIMIENTO
+                    </legend>
+                    <label for="fecha_nacimiento">Fecha nacimiento:</label>
+                    <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" required max="2010-10-27"
+                        min="2005-10-27">
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>
+                        SELECCIONE SUS MATERIAS
+                    </legend>
+                    <label for="materia1">PROGRAMACION WEB</label>
+                    <input type="checkbox" name="materia[]" id="materia1" required value="PROGRAMACION_WEB">
+                    <br>
+                    <label for="materia2">INVESTIGACION DE SOFTWARE</label>
+                    <input type="checkbox" name="materia[]" id="materia2" required value="INVESTIGACION_DE_SOFTWARE">
+                    <br>
+                    <label for="materia3">COMPUTACION DIGITAL</label>
+                    <input type="checkbox" name="materia[]" id="materia3" required value="COMPUTACION_DIGITAL">
+                    <br>
+                    <label for="materia4">BASE DE DATOS</label>
+                    <input type="checkbox" name="materia[]" id="materia4" required value="BASE_DE_DATOS">
+                    <br>
+                    <label for="materia5">COMPUTACION PARALELA</label>
+                    <input type="checkbox" name="materia[]" id="materia5" required value="COMPUTACION_PARALELA">
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>
+                        SELECCION SU HOJA DE VIDA
+                    </legend>
+                    <label for="hoja_vida">Hoja de vida:</label>
+                    <input type="file" name="hoja_vida" id="hoja_vida" accept=".pdf" required>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>
+                        GENERAR EL ID BANNER
+                    </legend>
+                    <label for="id_banner">ID Banner:</label>
+                    <input type="text" name="id_banner" id="id_banner" placeholder="ABC" required
+                        pattern="[A-Z]{3}[0-9]{5}">
+                </fieldset>
+            </center>
+            <center>
+                <button>
+                    ENVIAR REGISTRO
+                </button>
+            </center>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

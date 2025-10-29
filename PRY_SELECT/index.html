@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        CLASE SELECT
+    </title>
+</head>
+
+<body>
+
+    <header>
+        <center>
+            <h1>SELECT EN FORMULARIO</h1>
+        </center>
+    </header>
+    <main>
+        <form action="server.html" method="get">
+            <!-- <input type="submit" value="ENVIAR AL SERVIDOR"> -->
+            <!-- SELECT para form -->
+            <center>
+                <!-- <fieldset> para agrupar elementos relacionados -->
+                <fieldset>
+                    <!-- legend para dar un contexto al grupo de elementos -->
+                    <legend>
+                        SELECCIONE SU LENGUAJE DE PROGRAMACION FAVORITO
+                    </legend>
+                    <label for="lenguaje_programacion">Seleccione su lenguaje de programación favorito:</label>
+                    <select name="lenguaje_programacion" id="lenguaje_programacion">
+                        <option value="c_mas_mas">C++</option>
+                        <option value="java">JAVA</option>
+                        <option value="python">Python</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="html" disabled>HTML</option>
+
+                    </select>
+                </fieldset>
+            </center>
+            <br><br>
+            <!-- MULTI SELECT -->
+            <center>
+                <label for="musica_favorita">SELECCIONE SU MUSICA FAVORITAS</label>
+                <br>
+                <select name="musica_favorita[]" id="musica_favorita" multiple required size="10" maxlength="4"
+                    autofocus>
+                    <optgroup title="REGUETON" label="REGUETON">
+                        <option value="Loba">SHAKIRA LOBA</option>
+                        <option value="anoche" select>BAD BUNNY</option>
+                        <option value="all_of_me" disabled>JONH LENNON ALL OF ME</option>
+                        <option value="triste">JOSE JOSE TRISTE</option>
+                    </optgroup>
+                    <optgroup title="CHICHA" label="CHICHA">
+                        <option value="CHICHAMIX">CHICHAMIX 2025</option>
+                        <option value="CHICHA_CUMBIONA" select>CHICHA CUMBIONA</option>
+                        <option value="CHICHA_GERARDO" disabled>CHICHAMIX GERARDO MORAN</option>
+                        <option value="CHICHA_SALSA">PAULINA TAMAYO</option>
+                    </optgroup>
+
+                </select>
+            </center>
+            <br><br>
+
+            <!-- TEXT AREA -->
+            <center>
+                <label for="frase_motivadora">INGRESE SU FRASE DEL DIA DE HOY</label>
+                <br>
+                <textarea name="frase_motivadora" id="frase_motivadora" rows="10" cols="20">LA VIDA ES BELLA</textarea>
+            </center>
+
+            <!-- HIDDEN -->
+
+            <center>
+                <input type="hidden" name="cedula_usuario" value="0401865381">
+            </center>
+
+            <center>
+                <br><br>
+                <button type="submit">
+                    ENVIAR AL SERVIDOR
+                </button>
+            </center>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
