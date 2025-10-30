@@ -1,0 +1,33 @@
+/* 1 */
+input {
+    word-spacing: 3px;
+    word-spacing: 2cm;
+}
+
+/* 2 */
+textarea {
+    color: rgb(255, 0, 247);
+    text-decoration-line: line-through;
+}
+
+/* 3 */
+select {
+    outline: 5px solid rgb(13, 231, 90);
+}
+
+/* 4 */
+input[type="checkbox"]:hover {
+    accent-color: green;
+    border-radius: 5px;
+    border: 5px;
+    outline: 5px solid red;
+}
+
+
+/* 5 */
+input[type="radio"]:invalid {
+    accent-color: rgb(4, 255, 0);
+    border: none;
+    outline: 5px solid hwb(31 9% 16%);
+    border-radius: 5px;
+}

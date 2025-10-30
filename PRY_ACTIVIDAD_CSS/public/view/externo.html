@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACTIVIDAD FORMULARIO</title>
+    <title>
+        CSS EXTERNO
+    </title>
+    <link rel="stylesheet" href="../css/externo_css.css">
 </head>
 
 <body>
@@ -18,13 +21,32 @@
         <form action="server.html" method="post">
             <center>
                 <fieldset>
+                    <input type="reset" value="RESETEAR FORMULARIO"><br>
                     <legend>
                         INGRESE EL NUMERO DE CÉDULA
                     </legend>
                     <label for="cedula_usuario">Cédula:</label>
-                    <input type="text" name="cedula_usuario" id="cedula_usuario" required
-                        maxlength="10" pattern="[0-9]{10}" inputmode="numeric" title="DEBE INGRESAR EXACTAMENTE 10 NUMEROS" autocomplete="off">
+                    <input type="text" name="cedula_usuario" id="cedula_usuario" required maxlength="10"
+                        pattern="[0-9]{10}" inputmode="numeric" title="DEBE INGRESAR EXACTAMENTE 10 NUMEROS"
+                        autocomplete="off">
 
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>
+                        INGRESE SU SEXO
+                    </legend>
+                    <label for="sexo">SEXO:</label><br>
+                    <label for="radio_hombre">HOMBRE</label>
+                    <input type="radio" name="sexo" id="radio_hombre" value="HOMBRE" required><br>
+                    <label for="radio_mujer">MUJER</label>
+                    <input type="radio" name="sexo" id="radio_mujer" value="MUJER" required><br>
+                    <label for="radio_perro">PERRO</label>
+                    <input type="radio" name="sexo" id="radio_perro" value="PERRO" required><br>
+                    <label for="radio_gato">GATO</label>
+                    <input type="radio" name="sexo" id="radio_gato" value="GATO" required><br>
+                    <label for="radio_otro">OTRO</label>
+                    <input type="radio" class="radio" name="sexo" id="radio_otro" value="OTRO" pattern="HOMBRE"><br>
                 </fieldset>
                 <br>
                 <fieldset>
