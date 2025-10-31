@@ -15,7 +15,9 @@ textarea{
 }
 
 /* 3 */
-select {}
+select {
+    font-weight: 900;
+}
 
 /* 4 */
 input[type="checkbox"]:hover {
