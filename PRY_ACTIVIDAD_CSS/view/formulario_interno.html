@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        FORMULARIO CSS INTERNO
+    </title>
+
+    <style>
+        img {
+            width: 150px;
+            height: 150px;
+        }
+
+        table {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: lightblue;
+            width: 50%;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        main {
+            text-align: center;
+            margin-top: 30px;
+            padding: auto;
+        }
+
+        /* ----------------------------------------------------------------------------------------------- */
+        /* ESTILOS DE LA TAREA INPUT, TEXTAREA, SELECT CHECKBOX, RADIO */
+        input {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        textarea:hover {
+            background-color: rgb(235, 5, 5);
+            color: white;
+        }
+
+        select {
+            outline: green solid 3px;
+        }
+
+        input[type="checkbox"] {
+            accent-color: rgb(183, 0, 255);
+
+        }
+
+        input[type="radio"] {
+            cursor: progress;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+    </header>
+    <main>
+        <form action="formulario_externo.html" method="get">
+            <table>
+                <!-- ENCABEZADO -->
+                <thead>
+                    <tr>
+                        <td colspan="4">
+                            <figure>
+                                <img src="https://cdn-icons-png.freepik.com/512/6009/6009864.png" alt="IMAGEN CLIENTE">
+                            </figure>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">
+                            <h2>FORMULARIO DEL CLIENTE</h2>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">
+                            <h3>INFORMACION</h3>
+                        </th>
+                    </tr>
+                </thead>
+                <!-- CUERPO -->
+                <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <label for="nombres">INGRESE SU NOMBRE</label>
+                            <br>
+                            <input type="text" name="nombres" id="nombres" placeholder="Ejm. Cameron Victoria"
+                                minlength="3" maxlength="20" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <label for="vida_informacion">CUENTE ALGO INTERESANTE DE USTED</label>
+                            <br>
+                            <textarea name="vida_informacion" id="vida_informacion" cols="30" rows="5"
+                                placeholder="Ejm. Me gusta el futbol y la programacion..." required></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <!-- CAMPO SELECT -->
+                            <label for="date">SELECCIONE SU SEXO</label>
+                            <br>
+                            <select name="sexo" id="sexo" required>
+                                <option value="MASCULINO" selected>MASCULINO</option>
+                                <option value="FEMENINO">FEMENINO</option>
+                                <option value="PERRO" disabled>PERRO</option>
+                                <option value="GATO" disabled>GATO</option>
+                                <option value="OTRO">OTRO</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <br>
+                            <label for="HOBBIES">SELECCIONE SUS HOBBIES</label>
+                            <br>
+                            <label for="HOBBIES_FUTBOL">FUTBOL</label>
+                            <input type="checkbox" name="HOBBIES[]" id="HOBBIES_FUTBOL" value="FUTBOL" required>
+                            <br>
+                            <label for="HOBBIES_MUSICA">MUSICA</label>
+                            <input type="checkbox" name="HOBBIES[]" id="HOBBIES_MUSICA" value="MUSICA" required>
+                            <br>
+                            <label for="HOBBIES_PROGRAMACION">PROGRAMACION</label>
+                            <input type="checkbox" name="HOBBIES[]" id="HOBBIES_PROGRAMACION" value="PROGRAMACION"
+                                required>
+                            <br>
+                            <label for="HOBBIES_VIAJAR">VIAJAR</label>
+                            <input type="checkbox" name="HOBBIES[]" id="HOBBIES_VIAJAR" value="VIAJAR" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <br>
+                            <label for="ALIMENTACION">SELECCIONE SU TIPO DE ALIMENTACION</label>
+                            <br>
+                            <label for="ALIMENTACION_VEGANA">VEGANA</label>
+                            <input type="radio" name="ALIMENTACION" id="ALIMENTACION_VEGANA" value="VEGANA" required>
+                            <br>
+                            <label for="ALIMENTACION_OMNIVORA">OMNIVORA</label>
+                            <input type="radio" name="ALIMENTACION" id="ALIMENTACION_OMNIVORA" value="OMNIVORA"
+                                required>
+                            <br>
+                            <label for="ALIMENTACION_CARNIVORA">CARNIVORA</label>
+                            <input type="radio" name="ALIMENTACION" id="ALIMENTACION_CARNIVORA" value="CARNIVORA"
+                                required>
+                        </td>
+                    </tr>
+
+                </tbody>
+                <!-- PIE DE TABLA -->
+                <tfoot>
+                    <td>
+                        <input type="reset" name="vaciar" id="vaciar" value="VACIAR FORMULARIO">
+
+                    </td>
+                    <td>
+                        <input type="submit" name="enviar" id="enviarr" value="ENVIAR FORMULARIO">
+
+                    </td>
+                </tfoot>
+            </table>
+        </form>
+    </main>
+    <footer>
+        <h4>2024 &copy; Derechos Reservados</h4>
+    </footer>
+</body>
+
+</html>

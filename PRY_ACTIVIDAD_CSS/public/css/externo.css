@@ -1,0 +1,28 @@
+form,
+header,
+footer {
+    text-align: center;
+}
+
+/* 1 */
+input {
+    text-transform: uppercase;
+}
+
+/* 2 */
+textarea{
+    border: 2px dashed rgb(5, 254, 245);
+}
+
+/* 3 */
+select {}
+
+/* 4 */
+input[type="checkbox"]:hover {
+    box-shadow: 2px 2px 3px rgb(0, 13, 255);
+}
+
+/* 5 */
+input[type="radio"]:checked {
+    transform: scale(2);
+}
