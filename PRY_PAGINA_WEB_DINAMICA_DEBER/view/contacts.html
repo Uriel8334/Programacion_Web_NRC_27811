@@ -1,0 +1,74 @@
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Contacto</h2>
+        <p>Si tienes alguna pregunta, o como volverte socio, no dudes en contactarnos.</p>
+    </div><!-- End Section Title -->
+    <div class="container" data-aos="fade" data-aos-delay="100">
+        <div class="row gy-4">
+            <div class="col-lg-4">
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                    <i class="bi bi-geo-alt flex-shrink-0"></i>
+                    <div>
+                        <h3>Dirección</h3>
+                        <p>Ecuador, Quito, Parque Ingles</p>
+                    </div>
+                </div><!-- End Info Item -->
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                    <i class="bi bi-telephone flex-shrink-0"></i>
+                    <div>
+                        <h3>Llamanos</h3>
+                        <p>+593 98 3713 509</p>
+                    </div>
+                </div><!-- End Info Item -->
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                    <i class="bi bi-envelope flex-shrink-0"></i>
+                    <div>
+                        <h3>Nuestro correo</h3>
+                        <p>contacto_eva@evangeline.com</p>
+                    </div>
+                </div><!-- End Info Item -->
+            </div>
+            <div class="col-lg-8">
+                <form id="contactForm" class="php-email-form border-radius-10px">
+                    <div class="row gy-4">  
+                        <div class="col-md-6">
+                            <input type="text" name="name" id="contactName" class="form-control" placeholder="Your Name" required="">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" id="contactEmail" name="email" placeholder="Your Email" required="">
+                        </div>
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" id="contactSubject" name="subject" placeholder="Subject" required="">
+                        </div>
+                        <div class="col-md-12">
+                            <textarea class="form-control" id="contactMessage" name="message" rows="6" placeholder="Message" required=""></textarea>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#successModal">Enviar Mensaje</button>
+                        </div>
+                    </div>
+                </form>
+            </div><!-- End Contact Form -->
+        </div>
+    </div>
+</section><!-- /Contact Section -->
+
+<!-- Success Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="successModalLabel">Mensaje Enviado</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ¡Tu mensaje ha sido enviado correctamente! Gracias por contactarnos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
