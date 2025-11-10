@@ -65,14 +65,16 @@
   <main id="main" class="main">
 
   </main>
-  <div class="container">
-    <div class="copyright copyright-text">
-      <span>Copyright &copy; 2025 </span><span>Todos los derechos reservados.</span>
+  <footer>
+    <div class="container">
+      <div class="copyright copyright-text">
+        <span>Copyright &copy; 2025 </span><span>Todos los derechos reservados.</span>
+      </div>
+      <div class="credits copyright-text">
+        Diseñado por Uriel Andrade
+      </div>
     </div>
-    <div class="credits copyright-text">
-      Diseñado por Uriel Andrade
-    </div>
-  </div>
+  </footer>
 
   <!-- Scroll Top -->
   <a title="botton-back-top-scroll" href="#" id="scroll-top"
@@ -102,19 +104,19 @@
   <script>
     function loadPage(event, url) {
       event.preventDefault();
-      
+
       // Update active menu item - remove active from all, add to clicked
       const navLinks = document.querySelectorAll('#navmenu a');
       navLinks.forEach(link => {
         link.classList.remove('active');
       });
-      
+
       // Find and add active to the clicked link
       const clickedLink = event.currentTarget;
       if (clickedLink && clickedLink.tagName === 'A') {
         clickedLink.classList.add('active');
       }
-      
+
       const main = document.getElementById('main-content');
       fetch(url)
         .then(response => response.text())
@@ -127,9 +129,9 @@
           console.error('Error loading page:', error);
         });
     }
-    
+
     // Load home page on initial load
-    window.addEventListener('load', function() {
+    window.addEventListener('load', function () {
       const homeLink = document.querySelector('#navmenu a[href="./view/home.html"]');
       if (homeLink) {
         homeLink.classList.add('active');
