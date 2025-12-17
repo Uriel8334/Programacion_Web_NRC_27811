@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLAS MULTIPLICAR</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <h1>PARES E IMPARES</h1>
+    <div class="containeer">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" name="formId1" id="txt_numero_1" placeholder="" autofocus />
+            <label for="txt_numero_1">INGRESE EL NUMERO</label>
+
+        </div>
+        <br>
+        <div class="d-grid gap-2">
+            <button type="button" id="btn_mostrar_tabla" class="btn btn-primary">
+                MOSTRAR TABLA
+            </button>
+        </div>
+        <div class="container mt-3">
+            <div class="row">
+
+                <div class="col-6">
+                    <h4>PARES</h4>
+                    <p id="col_pares"></p>
+                </div>
+
+                <div class="col-6 text-end">
+                    <h4>IMPARES</h4>
+                    <p id="col_impares"></p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="d-grid gap-2 mt3">
+                <button type="button" id="btn_limpiar" class="btn btn-danger">
+                    LIMPIAR
+                </button>
+            </div>
+
+        </div>
+
+
+    </div>
+    <script src="../js/tabla.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARREGLOS</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    
+</head>
+
+<body class="bg-primary bg-gradient text-white pt-3">
+    <div class="container">
+        <h1>ARREGLOS EN JS</h1>
+        <hr>
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="txt_nombre_producto" placeholder="Ingrese el producto" />
+            <label for="txt_nombre_producto">INGRESE EL PRODUCTO</label>
+        </div>
+        <div class="d-grid gap-2 mb-4">
+            <button type="submit" id="btn_agregar" class="btn btn-success" submit>
+                AGREGAR
+            </button>
+        </div>
+
+        <div class="row" id="columnas_lista">
+            <div class="col-6">
+                <h2 class="fs-4 text-center">MAYÚSCULAS</h2>
+                <ul class="list-group list-group-flush" id="lista_productos_up">
+                    <!-- <li class="list-group-item">Item</li> -->
+                </ul>
+            </div>
+
+            <div class="col-6">
+                <h2 class="fs-4 text-center">MINÚSCULAS</h2>
+                <ul class="list-group list-group-flush" id="lista_productos_low">
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/agregarProducto.js"></script>
+</body>
+
+</html>
