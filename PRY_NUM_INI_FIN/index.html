@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Número de Inicio y Final
+    </title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body class="bg-dark text-white">
+    <header>
+        <div class="container">
+            <h1 class="text-center pt-3 border border-top-0 border-end-0 border-start-0 ">
+                MOSTRAR NUMERO DE INICIO Y NUMERO FINAL</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="m-3">
+                <label for="txt_inicio" class="form-label">INGRESE UN NUMERO DE INICIO</label>
+                <input type="number" class="form-control" name="txt_inicio" id="txt_inicio" placeholder="1" min="0"
+                    max="999" title="Ingrese un número entre 0 y 999" />
+            </div>
+            <div class="m-3">
+                <label for="txt_final" class="form-label">INGRESE UN NUMERO DE FINAL</label>
+                <input type="number" class="form-control" name="txt_final" id="txt_final" placeholder="10" min="0"
+                    max="999" title="Ingrese un número entre 0 y 999" />
+            </div>
+            <div class="d-grid gap-2">
+                <button type="button" id="btn_mostrar_resultado" class="btn btn-primary m-3">
+                    MOSTRAR RESULTADOS
+                </button>
+                <hr>
+                <p id="txt_resultado"></p>
+                <hr>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container text-center">
+            <h6>&copy; 2025 - Todos los derechos reservados <br> Desarrollado por Uriel Andrade</h6>
+        </div>
+    </footer>
+    <script src="./js/mostrarInicioyFin.js"></script>
+</body>
+
+</html>
